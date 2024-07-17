@@ -180,14 +180,15 @@
             let who = $("#who").val();
             let emoji = $("#emoji").val();
             let comment = $("#comment").val();
+
             let doc = {
                 'who': who,
                 'emoji': emoji,
                 'comment': comment
             };
+
             await addDoc(collection(db, "SAVE"), doc);
             alert('응원 남기기 성공!');
-
 
             let docs = await getDocs(collection(db, "SAVE"));
             docs.forEach((doc) => {
@@ -345,20 +346,20 @@
             <div class="col">
                 <div class="card h-100">
                     <div class="card-body">
-                        <h5 class="card-title">닉네임</h5>
+                        <h5 class="card-title">노다지</h5>
                         <hr>
-                        <p class="card-text">😍</p>
-                        <p class="card-text">********응원 내용********</p>
+                        <p class="card-text">🎉</p>
+                        <p class="card-text">같이 성장해요!</p>
                     </div>
                 </div>
             </div>
             <div class="col">
                 <div class="card h-100">
                     <div class="card-body">
-                        <h5 class="card-title">닉네임</h5>
+                        <h5 class="card-title">할랭이</h5>
                         <hr>
                         <p class="card-text">😍</p>
-                        <p class="card-text">********응원 내용********</p>
+                        <p class="card-text">앞으로 </p>
                     </div>
                 </div>
             </div>
