@@ -149,6 +149,31 @@
         .card {
             width: 200px;
         }
+
+        .col1 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 50px;
+            text-align: center;
+        }
+        .col2 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 50px;
+            text-align: center;
+        }
+        .col3 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 50px;
+            text-align: center;
+        }
     </style>
 
     <script type="module">
@@ -187,17 +212,18 @@
             };
             await addDoc(collection(db, "SAVE"), doc);
             alert('응원 남기기 성공!');
+            window.location.reload();
+        })
+        let docs = await getDocs(collection(db, "SAVE"));
+        docs.forEach((doc) => {
 
+            let row = doc.data();
+            let who = row['who'];
+            let emoji = row['emoji'];
+            let comment = row['comment'];
 
-            let docs = await getDocs(collection(db, "SAVE"));
-            docs.forEach((doc) => {
-
-                let row = doc.data();
-                let who = row['who'];
-                let emoji = row['emoji'];
-                let comment = row['comment'];
-
-                let temp_html = `           
+            let temp_html = `   
+                 <div class="cheerbox">
                     <div class="col">
                         <div class="card h-100">
                             <div class="card-body">
@@ -207,12 +233,13 @@
                                 <p class="card-text">${comment}</p>
                             </div>
                         </div>
-                    </div>`;
-                $('#cheercard').append(temp_html);
+                        </div>
+                 </div>`;
+            $('#cheercard').append(temp_html);
 
 
-            })
         })
+
 
 
 
@@ -340,41 +367,43 @@
             </div>
         </div>
     </div>
+
     <div class="cheerbox">
         <div id="cheercard" class="row row-cols-1 row-cols-md-3 g-4">
-            <div class="col">
+        
+            <div class="col1">
                 <div class="card h-100">
                     <div class="card-body">
-                        <h5 class="card-title">닉네임</h5>
+                        <h5 class="card-title">박한진</h5>
                         <hr>
                         <p class="card-text">😍</p>
-                        <p class="card-text">********응원 내용********</p>
+                        <p class="card-text">우리팀 항상 화이팅합시다.</p>
                     </div>
                 </div>
             </div>
-            <div class="col">
+            <div class="col2">
                 <div class="card h-100">
                     <div class="card-body">
-                        <h5 class="card-title">닉네임</h5>
+                        <h5 class="card-title">고양이</h5>
                         <hr>
-                        <p class="card-text">😍</p>
-                        <p class="card-text">********응원 내용********</p>
+                        <p class="card-text">👍</p>
+                        <p class="card-text">야옹</p>
                     </div>
                 </div>
             </div>
-            <div class="col">
+            <div class="col3">
                 <div class="card h-100">
                     <div class="card-body">
-                        <h5 class="card-title">닉네임</h5>
+                        <h5 class="card-title">강아지</h5>
                         <hr>
-                        <p class="card-text">😍</p>
-                        <p class="card-text">********응원 내용********</p>
+                        <p class="card-text">👏</p>
+                        <p class="card-text">멍</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    </div>
+    
 
 
 </body>
