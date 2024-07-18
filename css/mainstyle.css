@@ -14,7 +14,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-image: url('./images/하단배경.jpg');
+    background-image: url('../images/하단배경.jpg');
     background-size: cover;
 
     background-position: center center;
@@ -71,7 +71,7 @@ body {
     align-items: center;
     justify-content: center;
     color: white;
-    background-image: url('./images/상단배경.png');
+    background-image: url('../images/상단배경.png');
     background-size: cover;
     background-position: center;
     background-color: rgba(26, 18, 69, 1);
