@@ -25,6 +25,14 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
+            background-image: url('3131070.jpg');
+            background-size: cover;
+
+            background-position: center center;
+
+
+
+
         }
 
         .title {
@@ -37,17 +45,64 @@
             width: 2000px;
         }
 
-        .logo {
+        .onetwo {
             background-color: transparent;
-            margin-top: 10px;
+
         }
+
+        .uptitle {
+            display: flex;
+            font-size: 3em;
+            justify-content: center;
+            gap: 200px;
+            background-color: transparent;
+            padding: 10px;
+
+
+        }
+
+        .uptitle a {
+            color: white;
+            text-decoration: none;
+            font-size: 40px;
+            padding: 10px 30px;
+            background-color: transparent;
+            border-radius: 5px;
+        }
+
+        .uptitle a:hover {
+            background-color: #555;
+
+        }
+
 
         .main_img {
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            background-size: contain;
+            color: white;
+            background-image: url('title.png');
+            background-size: cover;
+            background-position: center;
+            background-color: rgba(26, 18, 69, 1);
+            width: 2000px;
+            height: 800px;
+            opacity: 1;
+            z-index: -1;
+
+
+
+
+        }
+
+        .main_img>h1 {
+            margin-left: 850px;
+            margin-bottom: 200px;
+            font-size: 3em;
+            margin-top: 400px;
+
+
         }
 
         .team {
@@ -70,7 +125,9 @@
             margin: 30px auto 10px auto;
             text-align: center;
             border-radius: 100px;
-            margin-top: 50px;
+            margin-top: 200px;
+            margin-bottom: 200px;
+
 
         }
 
@@ -92,6 +149,8 @@
             align-items: center;
             justify-content: center;
             margin-top: 80px;
+            
+
 
         }
 
@@ -158,6 +217,7 @@
             margin-bottom: 50px;
             text-align: center;
         }
+
         .col2 {
             display: flex;
             flex-direction: column;
@@ -166,6 +226,7 @@
             margin-bottom: 50px;
             text-align: center;
         }
+
         .col3 {
             display: flex;
             flex-direction: column;
@@ -173,6 +234,8 @@
             justify-content: center;
             margin-bottom: 50px;
             text-align: center;
+        }
+        .allbox{
         }
     </style>
 
@@ -248,12 +311,20 @@
 
 <body>
     <div class="title">
-        <img class="logo" src="file 1.png">
+        <div class="onetwo">
+            <nav class="uptitle">
+                <a href="#teamint">🌼팀원 소개🌼</a>
+                <a href="#one">🎉응원 한마디🎉</a>
+            </nav>
+        </div>
+
+
     </div>
     <div class="main_img">
-        <img src="title.png">
+        
+
     </div>
-    <div class="team">
+    <div class="team" id="teamint">
         <p>🌼팀원 소개🌼</p>
     </div>
     <div class="mycards">
@@ -330,47 +401,49 @@
             </div>
         </div>
     </div>
+    <div class="allbox" id="one">
+        <div class="text-ch">
+            <h1 class="display-5 fw-bolder" style="color: rgb(255, 255, 255);">🎉응원 한마디🎉</h1>
+        </div>
+        <div class="postingbox">
+            <div class="post-ch" id="input-card">
+                <div class="post" id="input-card">
+                    <div class="form-floating mb-3">
+                        <input type="email" class="form-control" id="who" placeholder="name@example.com">
+                        <label for="floatingInput">닉네임</label>
+                    </div>
 
-    <div class="text-ch">
-        <h1 class="display-5 fw-bolder">🎉응원 한마디🎉</h1>
-    </div>
-    <div class="postingbox">
-        <div class="post-ch" id="input-card">
-            <div class="post" id="input-card">
-                <div class="form-floating mb-3">
-                    <input type="email" class="form-control" id="who" placeholder="name@example.com">
-                    <label for="floatingInput">닉네임</label>
-                </div>
-
-                <div class="input-group mb-3">
-                    <button class="btn btn-outline-secondary" type="button">응원이모지</button>
-                    <select class="form-select" id="emoji" aria-label="Example select with button addon">
-                        <option selected>이모지 선택</option>
-                        <option value="👏">👏</option>
-                        <option value="🎉">🎉</option>
-                        <option value="🤳">🤳</option>
-                        <option value="💖">💖</option>
-                        <option value="✌">✌</option>
-                        <option value="🤝">🤝</option>
-                        <option value="🤓">🤓</option>
-                        <option value="👍">👍</option>
-                        <option value="😍">😍</option>
-                    </select>
-                </div>
-                <div class="form-floating">
-                    <textarea class="form-control" placeholder="Leave a comment here" id="comment"></textarea>
-                    <label for="floatingTextarea">응원 한마디</label>
-                </div>
-                <div class="button2">
-                    <button type="button" class="btn btn-danger" id="cheerBtn"> 응원남기기 </button>
+                    <div class="input-group mb-3">
+                        <button class="btn btn-outline-secondary" type="button">응원이모지</button>
+                        <select class="form-select" id="emoji" aria-label="Example select with button addon">
+                            <option selected>이모지 선택</option>
+                            <option value="👏">👏</option>
+                            <option value="🎉">🎉</option>
+                            <option value="🤳">🤳</option>
+                            <option value="💖">💖</option>
+                            <option value="✌">✌</option>
+                            <option value="🤝">🤝</option>
+                            <option value="🤓">🤓</option>
+                            <option value="👍">👍</option>
+                            <option value="😍">😍</option>
+                        </select>
+                    </div>
+                    <div class="form-floating">
+                        <textarea class="form-control" placeholder="Leave a comment here" id="comment"></textarea>
+                        <label for="floatingTextarea">응원 한마디</label>
+                    </div>
+                    <div class="button2">
+                        <button type="button" class="btn btn-danger" id="cheerBtn"> 응원남기기 </button>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
+
     <div class="cheerbox">
         <div id="cheercard" class="row row-cols-1 row-cols-md-3 g-4">
-        
+
             <div class="col1">
                 <div class="card h-100">
                     <div class="card-body">
@@ -403,7 +476,7 @@
             </div>
         </div>
     </div>
-    
+
 
 
 </body>
