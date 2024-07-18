@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle&display=swap');
+
+* {
+    font-family: "Dongle", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+body {
+    background-image: url('./images/하단배경.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    margin-bottom: 300px;
+    
+
+    
+}
+
+.title {
+    background-color: rgba(26, 18, 69, 1);
+    height: 140px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    background-color: transparent;
+    margin-top: 10px;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    margin: 0;
+}
+
+.profile_card {
+    display: flex;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 1000px;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-top: 300px;
+}
+
+.profile_info {
+    flex: 1;
+    padding-right: 20px;
+    border-right: 1px solid #ddd;
+    text-align: center;
+}
+
+.profile_picture {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 200px;
+    padding-left: 50px;
+    padding-right: 50px;
+
+}
+
+.profile_picture img {
+    border: 3px solid #000000;
+    border-radius: 10px;
+    width: 250px;
+    height: 350px;
+    object-fit: cover;
+}
+
+.profile_picture .name_tag {
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: rgba(26, 18, 69, 1);
+    color: white;
+    border-radius: 5px;
+    font-size: 1.1em;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+
+.header h2 {
+    margin: 0;
+    align-items: center;
+    text-align: center;
+    font-size: 2.2em;
+}
+
+.header .mbti {
+    font-size: 2.8em;
+    color: rgba(26, 18, 69, 1);
+    padding-left: 50px;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin: 20px 0;
+}
+
+.ratings p {
+    margin: 10px 0;
+    font-size: 1.1em;
+}
+
+.back {
+    width: 150px;
+    height: 50px;
+    background-color: rgba(26, 18, 69, 1);
+    color: white;
+    border-radius: 5px;
+    font-size: 1.9em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.content {
+    font-size: 2em;
+}
+
+.stars {
+    font-size: 2em;
+}

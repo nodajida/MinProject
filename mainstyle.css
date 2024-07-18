@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+
+* {
+    font-family: "Dongle", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+body {
+    background-color: rgba(254, 255, 194, 0.75);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url('./images/하단배경.jpg');
+    background-size: cover;
+
+    background-position: center center;
+
+
+
+
+}
+
+.title {
+    background-color: rgba(26, 18, 69, 1);
+    height: 140px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 2000px;
+}
+
+.onetwo {
+    background-color: transparent;
+
+}
+
+.uptitle {
+    display: flex;
+    font-size: 3em;
+    justify-content: center;
+    gap: 200px;
+    background-color: transparent;
+    padding: 10px;
+
+
+}
+
+.uptitle a {
+    color: white;
+    text-decoration: none;
+    font-size: 40px;
+    padding: 10px 30px;
+    background-color: transparent;
+    border-radius: 5px;
+}
+
+.uptitle a:hover {
+    background-color: #555;
+
+}
+
+
+.main_img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-image: url('./images/상단배경.png');
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(26, 18, 69, 1);
+    width: 2000px;
+    height: 800px;
+    opacity: 1;
+    z-index: -1;
+
+
+
+
+}
+
+.main_img>h1 {
+    margin-left: 850px;
+    margin-bottom: 200px;
+    font-size: 3em;
+    margin-top: 400px;
+
+
+}
+
+.team {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(26, 18, 69, 1);
+    color: white;
+    font-size: 4em;
+    width: 2000px;
+}
+
+.team>p {
+    margin-top: 30px;
+}
+
+.mycards {
+    width: 1100px;
+    margin: 30px auto 10px auto;
+    text-align: center;
+    border-radius: 100px;
+    margin-top: 200px;
+    margin-bottom: 200px;
+
+
+}
+
+.card-name {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    font-family: "Jua", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+.text-ch {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+
+
+
+}
+
+.postingbox {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 600px;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    margin-bottom: 80px;
+}
+
+.post {
+    margin-bottom: 15px;
+}
+
+.form-floating {
+    margin-bottom: 15px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.form-control,
+.form-select {
+    border-radius: 5px;
+}
+
+.btn {
+    border-radius: 5px;
+}
+
+.button2 {
+    display: flex;
+    justify-content: center;
+}
+
+.button2 .btn {
+    width: 100%;
+}
+
+.cheerbox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.card {
+    width: 200px;
+}
+
+.col1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.col2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.col3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+    text-align: center;
+}
